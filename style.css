@@ -39,7 +39,7 @@ textarea {
     width: 90px;
     height: auto;
 
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .top-right {
@@ -148,7 +148,7 @@ textarea {
 
     font-weight: 600;
 
-    padding: 8px 4px;
+    padding: 8px 4px; 
 
     position: relative;
 
