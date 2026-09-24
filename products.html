@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | Makiba Uniform of Students</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+    <div class="brand">
+
+        <div class="logo">
+
+            <img src="images/logo.png"
+                 alt="Makiba Uniform Logo"
+                 onerror="this.style.display='none'">
+
+        </div>
+
+        <div class="business-name">
+
+            <strong>
+                Makiba Uniform of Students
+            </strong>
+
+        </div>
+
+    </div>
+
+    <div class="top-right">
+
+        <a href="https://t.me/yourbusiness"
+           target="_blank">
+
+            <i class="fa-brands fa-telegram"></i>
+            Telegram
+
+        </a>
+
+        <a href="https://mail.google.com/"
+           target="_blank">
+
+            <i class="fa-solid fa-envelope"></i>
+            Email
+
+        </a>
+
+        <a href="https://wa.me/251913615433"
+           target="_blank">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+
+        </a>
+
+        <button class="phone-copy"
+                onclick="copyPhone()">
+
+            <i class="fa-solid fa-phone"></i>
+
+            +251 913615433
+
+        </button>
+
+    </div>
+
+    <ul class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+              <li>
+            <a href="index.html#about">
+                About
+            </a>
+        </li>
+
+
+    </ul> 
+
+</nav>
+
+</header>
+
+<section class="section products-page">
+
+<h1>
+    Our Products
+</h1>
+
+<p class="section-text">
+
+    Find the product you are looking for.
+
+</p>
+
+<div class="search-box">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+        type="text"
+        id="productSearch"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+    >
+
+</div>
+
+<div class="products-container"
+     id="productsContainer">
+
+    <div class="product-card"
+         data-product="student uniform school uniform">
+
+        <div class="product-image">
+            👕
+        </div>
+
+        <h3>
+            Student Uniform
+        </h3>
+
+        <p>
+            Complete school uniform for students.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Student Uniform')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school shirt white shirt student">
+
+        <div class="product-image">
+            👔
+        </div>
+
+        <h3>
+            School Shirt
+        </h3>
+
+        <p>
+            Comfortable and durable school shirt.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('School Shirt')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school trousers pants student">
+
+        <div class="product-image">
+            👖
+        </div>
+
+        <h3>
+            School Trousers
+        </h3>
+
+        <p>
+            Quality trousers suitable for students.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('School Trousers')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school bag backpack student">
+
+        <div class="product-image">
+            <img src="images/shemiz.jpg" alt="shemiz">
+        </div>
+
+        <h3>
+          Shirt
+        </h3>
+
+        <p>
+            Strong school bag for everyday use.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Shirt')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school shoes student shoes">
+
+        <div class="product-image">
+            <img src="images/skirt.jpg" alt="skirts">
+        </div>
+
+        <h3>
+            Skirts
+        </h3>
+
+        <p>
+            Comfortable skirts in every size for students.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Skirts')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school jacket winter student jacket">
+
+        <div class="product-image">
+            <img src="images/jacket.jpg" alt="jacket">
+
+        </div>
+
+        <h3>
+             Jacket
+        </h3>
+
+        <p>
+            Warm jacket for students.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Jacket')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school tie student tie">
+
+        <div class="product-image">
+            <img src="images/sweter.jpg
+              " alt="sweater">
+        </div>
+
+        <h3>
+            Sweater
+        </h3>
+
+        <p>
+            School Sweater available in different size.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Sweater')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card"
+         data-product="school sweater student sweater">
+
+        <div class="product-image">
+            <img src="images/trouser.jpg" alt="Trousers">
+
+        </div>
+
+        <h3>
+            Student Trousers
+        </h3>
+
+        <p>
+            Comfortable Trouser for school.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Trousers')">
+
+            Contact
+
+        </button>
+
+    </div>
+   
+    <div class="product-card hidden-product"
+         data-product="sports uniform sportswear football">
+
+        <div class="product-image">
+            ⚽
+        </div>
+
+        <h3>
+            Sports Uniform
+        </h3>
+
+        <p>
+            Sportswear for school activities.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('Sports Uniform')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card hidden-product"
+         data-product="school cap student cap">
+
+        <div class="product-image">
+            🧢
+        </div>
+
+        <h3>
+            School Cap
+        </h3>
+
+        <p>
+            Student school cap.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('School Cap')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card hidden-product"
+         data-product="school belt student belt">
+
+        <div class="product-image">
+            👔
+        </div>
+
+        <h3>
+            School Belt
+        </h3>
+
+        <p>
+            Durable student belt.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('School Belt')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="product-card hidden-product"
+         data-product="school socks student socks">
+
+        <div class="product-image">
+            🧦
+        </div>
+
+        <h3>
+            School Socks
+        </h3>
+
+        <p>
+            Comfortable student socks.
+        </p>
+
+        <h4>
+            Contact for Price
+        </h4>
+
+        <button onclick="contactProduct('School Socks')">
+
+            Contact
+
+        </button>
+
+    </div>
+
+</div>
+
+<p id="noResults"
+   style="display:none;">
+
+    No products found.
+
+</p>
+
+</section>
+
+<section class="section">
+
+<div class="contact-info">
+    <h2>
+        Our Information
+    </h2>
+
+    <p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Addis+Ababa+Ethiopia"
+           target="_blank">
+
+            📍 Addis Ababa, Ethiopia
+
+        </a>
+
+    </p>
+    <p>
+
+        <button onclick="copyPhone()"
+                class="contact-phone">
+
+            📞 +251 913615433
+
+        </button>
+
+    </p>
+
+    <p>
+
+        <a href="https://t.me/Immigration1"
+           target="_blank">
+
+            <i class="fa-brands fa-telegram"></i>
+
+            Contact us on Telegram
+
+        </a>
+
+    </p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+    © 2026 Makiba Uniform of Students.
+    All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+
